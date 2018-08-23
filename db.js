@@ -29,7 +29,7 @@ function addUser (req, testConn){
 // }
 module.exports = {
   getWalks,
-  getWalkById,
+  
   addWalk,
   addUser
 }
