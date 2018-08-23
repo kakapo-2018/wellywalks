@@ -1,7 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 
-const userRoutes = require('./routes/users')
+const walkRoutes = require('./routes/walks')
 
 const server = express()
 
@@ -13,6 +13,6 @@ server.use(express.urlencoded({extended: true}))
 
 // Routes
 
-server.use('/', userRoutes)
+server.use('/', walkRoutes)
 
 module.exports = server

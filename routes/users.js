@@ -16,4 +16,6 @@ router.get('/', (req, res) => {
     })
 })
 
+// route to walk/id
+
 module.exports = router
