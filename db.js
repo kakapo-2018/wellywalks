@@ -18,13 +18,17 @@ function getWalkById (walkID, testConn) {
 function addWalk (req, testConn){
   const conn = testConn || connection
   return conn('walks').insert(req)
+}
 
-  
+function addUser (req, testConn){
+  const conn = testConn || connection
+  return conn('users').insert(req)
 }
 
 
 module.exports = {
   getWalks,
   getWalkById,
-  addWalk
+  addWalk,
+  addUser
 }
