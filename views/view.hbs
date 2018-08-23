@@ -1,4 +1,19 @@
-<h1> You're now viewing a singular walk </h1>
 
-
-I'm the view template
+<div class="walk">
+{{!-- Display each image --}}
+ {{#each walks}}
+  <ul>
+    <li>id: {{id}}</li>
+    <li>walk_name: {{walk_name}}</li>
+    <li>created_by: {{created_by}}</li>
+    <li>location: {{location}}</li>
+    <li>length: {{length}}</li>
+    <li>duration: {{duration}}</li>
+    <li>difficulty: {{difficulty}}</li>
+    <li>description: {{description}}</li>
+  </ul>
+<div class="row">
+  <iframe src="{{url}}"></iframe>
+</div>
+{{/each}}
+</div> 
