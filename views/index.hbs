@@ -4,19 +4,31 @@
     <title>WellyWalks</title>
   </head>
   <body>
+    <h1>Home page showing different walks</h1>
     Walk with us today - below is example data for the db
-    {{{body}}}
+
+<form action="/walks/{{id}}" method="GET">
+      <select name="walk_id">
+        {{#each walks}}
+          <option value="{{id}}" name="optionName">{{walk_name}}</option>
+        {{/each}}
+      </select>
+      <input id="submit" type="submit" value="Let's go!" />
+</form>
+
+
+ {{#each walks}}
     <ul>
-    <li>id:{{id}}</li>
-    <li>walk_name:{{walk_name}}</li>
-    <li>created_by:{{created_by}}</li>
-      <li>location:{{location}}</li>
-        <li>length:{{length}}</li>
-          <li>duration:{{duration}}</li>
-            <li>difficulty:{{difficulty}}</li>
-              <li>description:{{description}}</li>
+    <li>id: {{id}}</li>
+    <li>walk_name: {{walk_name}}</li>
+    <li>created_by: {{created_by}}</li>
+      <li>location: {{location}}</li>
+        <li>length: {{length}}</li>
+          <li>duration: {{duration}}</li>
+            <li>difficulty: {{difficulty}}</li>
+              <li>description: {{description}}</li>
   </ul>
                   <iframe src="{{url}}"></iframe>
-
+{{/each}}
   </body>
 </html>
