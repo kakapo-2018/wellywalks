@@ -67,6 +67,18 @@ router.get('/walks/:id', (req, res) => {
   
 })
 
+// --------------- profiles id
 
+router.get('/profiles/:id', (req, res) => {
+  db.getProfilesById(req.params.id) // function name is placeholder, change at need
+    .then(profile => {
+      console.log(profile)
+      res.render('profile', profile) 
+    })
+    .catch(err => {
+      res.status(500)
+      .send("ERROR: " + err.message)
+    })
+})
 
 module.exports = router

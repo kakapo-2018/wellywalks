@@ -17,13 +17,20 @@ function addUser (req, testConn){
   return conn('profiles').insert(req)
 }
 
+function getProfilesById (id, testConn) {
+  const conn = testConn || connection
+  return conn('profiles').where('id', id).first()
+}
+
 function getWalkById(id, testConn) {
   const conn = testConn || connection
   return conn('walks').select().where({'id': id}).first()
 }
 
+
 module.exports = {
   getWalks,
+  getProfilesById,
   getWalkById,
   addWalk,
   addUser
