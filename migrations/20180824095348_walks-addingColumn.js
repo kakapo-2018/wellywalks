@@ -8,8 +8,8 @@ exports.up = (knex, Promise) => {
       table.integer('duration')
       table.string('difficulty')
       table.string('description',5000)
-      table.string('url')
-      table.string('image')
+      table.string('url',5000)
+      table.string('image',5000)
       table.boolean('dog_friendly')
       
     })

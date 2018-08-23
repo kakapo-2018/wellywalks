@@ -43,15 +43,28 @@ router.post('/add', (req, res) => {
 })
 // --------------- walks and walks/id
 
+router.post('/walks/', (req, res) => {
+  console.log(req.body);
+  let id = req.body.walk_id;
+  res.redirect('/walks/' + id)
+  
+})
+
+
 router.get('/walks/:id', (req, res) => {
+
   db.getWalkById(req.params.id) // function name is placeholder, change at need
     .then(walk => {
+      console.log(walk);
+      
       res.render('view', walk) //can't see the walk yet, assuming it will come later
     })
     .catch(err => {
       res.status(500)
       .send("ERROR: " + err.message)
     })
+ 
+  
 })
 
 // --------------- profiles id
