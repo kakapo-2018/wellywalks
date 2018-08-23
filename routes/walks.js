@@ -18,10 +18,11 @@ router.get('/', (req, res) => {
     })
 })
 
+
 // --------------- walks and walks/id
 
 router.get('/walks/:id', (req, res) => {
-  db.getWalk(req.params.id) // function name is placeholder, change at need
+  db.getWalkById(req.params.id) // function name is placeholder, change at need
     .then(walk => {
       res.render('view', walk) //can't see the view.hbs yet, assuming it will come later
     })

@@ -1,11 +1,11 @@
 MVP - goal to be finished by 12noon
 
 Step 1:
-- Boilerplate
+- Boilerplate  [DONE]
 - data gathering (10 walks)
 
 Step 2: 
-- routes
+- routes [WIP = Lianna]
 
 Step 3:
 - static content (placeholder images)
