@@ -2,10 +2,10 @@ MVP - goal to be finished by 12noon
 
 Step 1:
 - Boilerplate  [DONE]
-- data gathering (10 walks)
+- data gathering (10 walks) [WIP - Ben]
 
 Step 2: 
-- routes [WIP = Lianna]
+- routes [DONE... until we need more]
 
 Step 3:
 - static content (placeholder images)
@@ -32,3 +32,9 @@ Stretch - to finish as we are able
 - Googlemap images for walks
 - additional walks
 - users can add walks (required name/userID for tracking)
+
+
+Pictures:
+brooklyn https://upload.wikimedia.org/wikipedia/commons/3/39/Brooklyn_wind_turbine.jpg
+
+
