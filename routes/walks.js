@@ -10,16 +10,28 @@ const router = express.Router()
 router.get('/', (req, res) => {
   db.getWalks()
     .then(walks => {
+      console.log(walks);
       
-      res.render('index', walks[0])
+      res.render('index', {walks})
     })
     .catch(err => {
-      res.status(500)
-      .send("ERROR: " + err.message)
+      res.status(500).send('DATABASE ERROR: ' + err.message)
     })
 })
 
 
+router.get('/add', (req, res) => {
+  
+    res.render('add')
+  
+})
+
+router.post('/add', (req, res) => {
+  console.log(req.body);
+  db.addWalk(req.body).then((data) => {
+    res.render('add', {success: true} )
+  })
+})
 // --------------- walks and walks/id
 
 router.get('/walks/:id', (req, res) => {
@@ -32,6 +44,7 @@ router.get('/walks/:id', (req, res) => {
       .send("ERROR: " + err.message)
     })
 })
+
 
 
 module.exports = router
