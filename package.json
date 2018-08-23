@@ -9,10 +9,7 @@
     "start": "node index",
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dev-academy-challenges/boilerplate-knex.git"
-  },
+  "repository": "git+https://github.com/dev-academy-challenges/boilerplate-knex.git",
   "author": "EDA",
   "license": "ISC",
   "bugs": {
