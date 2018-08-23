@@ -10,6 +10,8 @@ const router = express.Router()
 router.get('/', (req, res) => {
   db.getWalks()
     .then(walks => {
+      console.log(walks);
+      
       res.render('index', {walks})
     })
     .catch(err => {
