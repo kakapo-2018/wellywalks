@@ -22,13 +22,15 @@
   "dependencies": {
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
+    "heroku": "^7.12.1",
     "knex": "^0.15.2",
     "nodemon": "^1.18.3",
-    "sqlite3": "^4.0.2"
+    "pg": "^7.4.3"
   },
   "devDependencies": {
     "cheerio": "0.22.0",
     "jest": "^23.5",
-    "supertest": "^3.1.0"
+    "supertest": "^3.1.0",
+    "sqlite3": "^4.0.2"
   }
 }
