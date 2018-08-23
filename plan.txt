@@ -1,0 +1,34 @@
+MVP - goal to be finished by 12noon
+
+Step 1:
+- Boilerplate
+- data gathering (10 walks)
+
+Step 2: 
+- routes
+
+Step 3:
+- static content (placeholder images)
+- handlebars
+- create database (structure)
+
+Step 4: 
+- create seeds
+
+Step 5: 
+- joins/relationships 
+
+Step 6:
+- integrate and test all components
+
+
+
+Stretch - to finish as we are able
+
+- CSS
+- User profiles
+- Likes
+- Wishlist
+- Googlemap images for walks
+- additional walks
+- users can add walks (required name/userID for tracking)
