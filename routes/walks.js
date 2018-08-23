@@ -10,7 +10,7 @@ const router = express.Router()
 router.get('/', (req, res) => {
   db.getWalks()
     .then(walks => {
-      // console.log(walks);
+      console.log(walks);
       
       res.render('index', {walks})
     })
@@ -29,14 +29,14 @@ router.get('/adduser', (req, res) => {
 })
 
 router.post('/adduser', (req, res) => {
-  // console.log(req.body);
+  console.log(req.body);
   db.addUser(req.body).then((data) => {
   res.render('adduser', {success: true})
   })
 })
 
 router.post('/add', (req, res) => {
-  // console.log(req.body);
+  console.log(req.body);
   db.addWalk(req.body).then((data) => {
     res.render('add', {success: true} )
   })
