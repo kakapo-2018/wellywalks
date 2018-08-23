@@ -19,7 +19,7 @@ function addWalk (req, testConn){
 
 function addUser (req, testConn){
   const conn = testConn || connection
-  return conn('users').insert(req)
+  return conn('profiles').insert(req)
 }
 
 
