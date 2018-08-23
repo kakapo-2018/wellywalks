@@ -3,20 +3,17 @@ const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
 
+module.exports = {
+  getWalks
+}
+
 function getWalks (testConn) {
   const conn = testConn || connection
   return conn('walks').select()
 }
 
-function getWalkById (walkID, testConn) {
-  const conn = testConn || connection
-  return conn('walks')
-  .where('id', walkID)
-  .first()
-}
 
-
-module.exports = {
-  getWalks,
-  getWalkById
-}
+// function getUser (id, testConn) {
+//   const conn = testConn || connection
+//   return conn('users').where('id', id).first()
+// }
