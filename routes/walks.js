@@ -14,7 +14,8 @@ router.get('/', (req, res) => {
       res.render('index', walks[0])
     })
     .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
+      res.status(500)
+      .send("ERROR: " + err.message)
     })
 })
 
@@ -24,7 +25,7 @@ router.get('/', (req, res) => {
 router.get('/walks/:id', (req, res) => {
   db.getWalkById(req.params.id) // function name is placeholder, change at need
     .then(walk => {
-      res.render('view', walk) //can't see the view.hbs yet, assuming it will come later
+      res.render('view', walk) //can't see the walk yet, assuming it will come later
     })
     .catch(err => {
       res.status(500)
