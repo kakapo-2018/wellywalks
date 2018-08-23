@@ -21,9 +21,18 @@ router.get('/', (req, res) => {
 
 
 router.get('/add', (req, res) => {
-  
     res.render('add')
-  
+})
+
+router.get('/adduser', (req, res) => {
+  res.render('adduser')
+})
+
+router.post('/adduser', (req, res) => {
+  console.log(req.body);
+  db.addUser(req.body).then((data) => {
+  res.render('adduser', {success: true})
+  })
 })
 
 router.post('/add', (req, res) => {
