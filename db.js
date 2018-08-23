@@ -15,8 +15,16 @@ function getWalkById (walkID, testConn) {
   .first()
 }
 
+function addWalk (req, testConn){
+  const conn = testConn || connection
+  return conn('walks').insert(req)
+
+  
+}
+
 
 module.exports = {
   getWalks,
-  getWalkById
+  getWalkById,
+  addWalk
 }
