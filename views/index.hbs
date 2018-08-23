@@ -1,5 +1,7 @@
     <h1>Home page showing different walks</h1>
     Walk with us today - below is example data for the db
+<a href="/add">Add a walk</a></br>
+<a href="/adduser">Sign up</a></br>
 
 <form action="/walks/{{id}}" method="GET">
       <select name="walk_id">
@@ -9,7 +11,6 @@
       </select>
       <input id="submit" type="submit" value="Let's go!" />
 </form>
-
 
  {{#each walks}}
     <ul>
