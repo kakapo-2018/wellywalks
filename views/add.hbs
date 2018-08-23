@@ -1,0 +1,16 @@
+<h1>Add Walk</h1>
+<form action="/add" method="POST">
+    <input type="text" name="walk_name" value="walk_name" />
+    <input type="text" name="created_by" value="created_by" />
+    <input type="text" name="location" value="location" />
+    <input placeholder="length" type="number" name="length" value="length" />
+    <input placeholder="duration" type="number" name="duration" value="duration" />
+    <input type="text" name="difficulty" value="difficulty" />
+    <input type="text" name="description" value="description" />
+    <input type="url" name="url" value="url" />
+    <input id="submit" type="submit" value="Add Walk" />
+</form>
+
+{{#if success}}
+    <p>Added walk!</p>
+{{/if }}
