@@ -1,12 +1,20 @@
-<h1>{{name}}'s Profile</h1>
+<h1>{{profile.name}}'s Profile</h1>
 
-<img src="{{image}}"/>
+<img src="{{profile.image}}"/>
 
-<p>Name: {{name}}<br>
-Fitness level: {{level}}<br>
+<p>Name: {{profile.name}}<br>
+Fitness level: {{profile.level}}<br>
 </p>
 
 <h3>Bio</h3>
-<p>{{bio}}</p>
+<p>{{profile.bio}}</p>
 
+<h2>Fave Walks</h2>
+{{#each faves}}
+<li><a href="/walks/{{favwalk_id}}">{{walk_name}}</a></li>
+
+{{/each}}
+<p></p>
 <a href="/">Home</a></br>
+<p></p>
+<a href="/profiles">Back to Profiles</a></br>

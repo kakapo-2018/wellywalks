@@ -32,6 +32,13 @@ function getWalkById(id, testConn) {
   return conn('walks').select().where({'id': id}).first()
 }
 
+function getUserFaves (user_id, testConn) {
+  const conn = testConn || connection
+  return conn('favourites').select()
+  .join('walks', 'favwalk_id', 'id')
+  .where({'user_id': user_id})
+}
+
 
 module.exports = {
   getWalks,
@@ -39,5 +46,6 @@ module.exports = {
   getWalkById,
   addWalk,
   addUser,
-  getUsers
+  getUsers,
+  getUserFaves
 }

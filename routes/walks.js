@@ -78,8 +78,12 @@ router.get('/walks/:id', (req, res) => {
 router.get('/profiles/:id', (req, res) => {
   db.getProfilesById(req.params.id) // function name is placeholder, change at need
     .then(profile => {
-      console.log(profile)
-      res.render('profile', profile) 
+      db.getUserFaves(req.params.id).then((faves) => {
+        console.log(faves);
+        
+        res.render('profile', {profile, faves}) 
+      })
+      
     })
     .catch(err => {
       res.status(500)
