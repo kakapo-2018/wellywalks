@@ -123,6 +123,9 @@ input:focus::-webkit-input-placeholder {
   font-weight: bold;
 }
 
+img {
+  size: 100%
+}
 #dog {
   display: block;
   margin-left: 5px;
