@@ -1,4 +1,4 @@
-<h3>Add Walk</h3>
+<h3>Add A New Walk</h3>
 <form action="/add" method="POST">
     <input placeholder="Walk name"type="text" name="walk_name"  />
     <input placeholder="Created By"type="text" name="created_by"  />
@@ -8,13 +8,16 @@
     <input placeholder="Difficulty"type="text" name="difficulty"  />
     <input placeholder="Description"type="text" name="description" />
     <input placeholder="URL"type="url" name="url" />
-    <input id="submit" type="submit" value="Add Walk" />
+    <h2>Dog Friendly?<input id="dog" placeholder="Dog Friendly?" type="checkbox" name="dog_friendly" /></h2>
+    
+    <p></p>
+    <input id="submit" type="submit" value="Add Walk">
 </form>
 
 {{#if success}}
-    <h2 id="success">Added walk  <i class="fas fa-check"></i>
+    <h2 id="success">Added walk {{name}} <i class="fas fa-check"></i>
 
 </h2>
 {{/if }}
-
+<p></p>
 <a href="/">Home</a></br>

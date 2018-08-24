@@ -1,6 +1,6 @@
 /* ---------- Sandbox colours for ease of checking ---------- *
 /* Small phones = <400px */
-body {  background-color: #D1EBFF;}
+body {  background-color: green;}
 /* Big phones = 400-550px = red */
 @media (min-width: 400px) { body {background-color: red;} }
 /* Phablet = 550-750px = orange */
@@ -125,4 +125,29 @@ input:focus::-webkit-input-placeholder {
 
 img {
   size: 100%
+}
+
+#dog {
+  display: block;
+  margin-left: 5px;
+  margin-top: 10px;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+  color: grey;
+  text-align: center;
+}
+
+.mainstyle {
+  background-color: darkgray;
 }
