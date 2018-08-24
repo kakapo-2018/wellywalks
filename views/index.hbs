@@ -1,9 +1,24 @@
+<div class="container">
+<div class="header">
+<h1>Welcome to Wellington Walks!</h1>
+  <h2>Walk with us today</h2>
+</div>
 
-<h1>Home page showing different walks</h1>
-  Walk with us today - below is example data for the db
-<a href="/add">Add a walk</a></br>
-<a href="/adduser">Sign up</a></br>
-{{walks.id}}
+{{!-- Links --}}
+<nav class="nav-row">
+  <div class="nav-link">
+    <a href="/add">Add a walk</a>
+  </div>
+  <div class="nav-link">
+    <a href="/adduser">Sign up</a>
+  </div>
+  <div class="nav-link">
+    <a href="/profiles">View Users</a>
+  </div>
+</nav>
+
+{{!-- Form for new walks --}}
+<div class="new-walk-form">
 <form action="/walks/" method="POST">
       <select name="walk_id">
         {{#each walks}}
@@ -12,18 +27,9 @@
       </select>
       <input id="submit" type="submit" value="Let's go!" />
 </form>
+</div>
 
- {{#each walks}}
-    <ul>
-    <li>id: {{id}}</li>
-    <li>walk_name: {{walk_name}}</li>
-    <li>created_by: {{created_by}}</li>
-    <li>location: {{location}}</li>
-    <li>length: {{length}}</li>
-    <li>duration: {{duration}}</li>
-    <li>difficulty: {{difficulty}}</li>
-    <li>description: {{description}}</li>
-  </ul>
-<iframe src="{{url}}"></iframe>
-{{/each}}
- 
+
+
+
+</div>

@@ -1,16 +1,19 @@
-<h1> You're now viewing a singular walk </h1>
+<div class="walk">
+<p><strong>Walk ID: </strong>{{id}}</p>
+<p><strong>{{walk_name}}</strong></p>
+<p><strong>Created by: </strong>{{created_by}}</p>
+<p><strong>Location: </strong>{{location}}</p>
+<p><strong>Length (km):</strong> {{length}}</p>
+<p><strong>Hours: </strong>{{duration}}</p>
+<p><strong>Difficulty: </strong>{{difficulty}}</p>
+<p><strong>Description: </strong>{{description}}</p>
+<p><img src="{{image}}"</p>
+<p><strong>Dog Friendly: </strong>{{dog_friendly}}</p>
 
+<div class="row">
+  <iframe src="{{url}}"></iframe>
+</div>
 
-I'm the view template
+</div> 
 
-{{id}}
-{{walk_name}}
-{{created_by}}
-{{location}}
-{{length}}
-{{duration}}
-{{difficulty}}
-{{description}}
-{{url}}
-{{image}}
-{{dog_friendly}}
+<a href="/">Home</a></br>

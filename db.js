@@ -22,6 +22,11 @@ function getProfilesById (id, testConn) {
   return conn('profiles').where('id', id).first()
 }
 
+function getUsers (testConn){
+  const conn = testConn || connection
+  return conn('profiles').select()
+}
+
 function getWalkById(id, testConn) {
   const conn = testConn || connection
   return conn('walks').select().where({'id': id}).first()
@@ -33,5 +38,6 @@ module.exports = {
   getProfilesById,
   getWalkById,
   addWalk,
-  addUser
+  addUser,
+  getUsers
 }
