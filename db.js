@@ -39,6 +39,11 @@ function getUserFaves (user_id, testConn) {
   .where({'user_id': user_id})
 }
 
+function allFaves (testConn){
+  const conn = testConn || connection
+  return conn('favourites').select()
+}
+
 
 module.exports = {
   getWalks,
@@ -47,5 +52,6 @@ module.exports = {
   addWalk,
   addUser,
   getUsers,
-  getUserFaves
+  getUserFaves,
+  allFaves
 }

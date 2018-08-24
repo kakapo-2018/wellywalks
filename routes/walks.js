@@ -79,9 +79,28 @@ router.get('/profiles/:id', (req, res) => {
   db.getProfilesById(req.params.id) // function name is placeholder, change at need
     .then(profile => {
       db.getUserFaves(req.params.id).then((faves) => {
+
+
+
+        const obj = faves.reduce((acc, entry, i, arr) => {
+          if (!acc.hasOwnProperty(entry.id)) acc[entry.id] = entry
+          return acc
+        }, {})
+        const noDupes = Object.keys(obj).map(key => obj[key])
+
+
+
         console.log(faves);
+        db.getWalks().then((walks) => {
+          console.log(walks);
+          
+
+
+
+          
+          res.render('profile', {profile, noDupes, walks}) 
+        })
         
-        res.render('profile', {profile, faves}) 
       })
       
     })
@@ -89,6 +108,18 @@ router.get('/profiles/:id', (req, res) => {
       res.status(500)
       .send("ERROR: " + err.message)
     })
+})
+
+//leslie
+router.post('/faves/:id', (req, res) => {
+  let faveUser = req.body;
+  let userWhoFav = req.params.id;
+  db.allFaves().insert({'user_id': userWhoFav, 'favwalk_id': faveUser.favuser_id})
+  .then((data) => {
+    db.getUserFaves(req.params.id).then((data2) => {
+      res.redirect('/profiles/' + userWhoFav)
+    })
+  })
 })
 
 module.exports = router

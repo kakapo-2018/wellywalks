@@ -10,7 +10,7 @@ Fitness level: {{profile.level}}<br>
 <p>{{profile.bio}}</p>
 
 <h2>Fave Walks</h2>
-{{#each faves}}
+{{#each noDupes}}
 <li><a href="/walks/{{favwalk_id}}">{{walk_name}}</a></li>
 
 {{/each}}
@@ -18,3 +18,12 @@ Fitness level: {{profile.level}}<br>
 <a href="/">Home</a></br>
 <p></p>
 <a href="/profiles">Back to Profiles</a></br>
+
+<form action="/faves/{{profile.id}}" method="POST">
+      <select name="favuser_id">
+        {{#each walks}}
+          <option value="{{id}}" name="optionName">{{walk_name}}</option>
+        {{/each}}
+      </select>
+      <input id="submit" type="submit" value="Fav Walk" />
+</form>
