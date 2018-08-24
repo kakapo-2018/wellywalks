@@ -1,19 +1,23 @@
-
 <div class="walk">
-{{!-- Display each image --}}
- {{#each walks}}
-  <ul>
-    <li>id: {{id}}</li>
-    <li>walk_name: {{walk_name}}</li>
-    <li>created_by: {{created_by}}</li>
-    <li>location: {{location}}</li>
-    <li>length: {{length}}</li>
-    <li>duration: {{duration}}</li>
-    <li>difficulty: {{difficulty}}</li>
-    <li>description: {{description}}</li>
-  </ul>
+
+<p>I'm the view template</p>
+
+<p>{{id}}</p>
+<p>{{walk_name}}</p>
+<p>{{created_by}}</p>
+<p>{{location}}</p>
+<p>{{length}}</p>
+<p>{{duration}}</p>
+<p>{{difficulty}}</p>
+<p>{{description}}</p>
+<p>{{url}}</p>
+<p>{{image}}</p>
+<p>{{dog_friendly}}</p>
+
 <div class="row">
   <iframe src="{{url}}"></iframe>
 </div>
-{{/each}}
+
 </div> 
+
+<a href="/">Home</a></br>
