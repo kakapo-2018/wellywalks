@@ -41,6 +41,12 @@ router.post('/add', (req, res) => {
     res.render('add', {success: true} )
   })
 })
+
+router.get('/profiles', (req, res) => {
+  db.getUsers().then((users) => {
+    res.render('profiles', {users})
+  })
+})
 // --------------- walks and walks/id
 
 router.post('/walks/', (req, res) => {

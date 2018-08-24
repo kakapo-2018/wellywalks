@@ -12,15 +12,14 @@
   <div class="nav-link">
     <a href="/adduser">Sign up</a>
   </div>
+  <div class="nav-link">
+    <a href="/profiles">View Users</a>
+  </div>
 </nav>
-
-
-
-
 
 {{!-- Form for new walks --}}
 <div class="new-walk-form">
-<form action="/walks/{{id}}" method="GET">
+<form action="/walks/" method="POST">
       <select name="walk_id">
         {{#each walks}}
           <option value="{{id}}" name="optionName">{{walk_name}}</option>
