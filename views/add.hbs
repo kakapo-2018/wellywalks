@@ -1,18 +1,20 @@
 <h1>Add Walk</h1>
 <form action="/add" method="POST">
-    <input type="text" name="walk_name" value="walk_name" />
-    <input type="text" name="created_by" value="created_by" />
-    <input type="text" name="location" value="location" />
-    <input placeholder="length" type="number" name="length" value="length" />
-    <input placeholder="duration" type="number" name="duration" value="duration" />
-    <input type="text" name="difficulty" value="difficulty" />
-    <input type="text" name="description" value="description" />
-    <input type="url" name="url" value="url" />
+    <input placeholder="Walk name"type="text" name="walk_name"  />
+    <input placeholder="Created By"type="text" name="created_by"  />
+    <input placeholder="Location"type="text" name="location"  />
+    <input placeholder="Length" type="number" name="length" />
+    <input placeholder="Duration" type="number" name="duration"  />
+    <input placeholder="Difficulty"type="text" name="difficulty"  />
+    <input placeholder="Description"type="text" name="description" />
+    <input placeholder="URL"type="url" name="url" />
     <input id="submit" type="submit" value="Add Walk" />
 </form>
 
 {{#if success}}
-    <p>Added walk!</p>
+    <h2 id="success">Added walk  <i class="fas fa-check"></i>
+
+</h2>
 {{/if }}
 
 <a href="/">Home</a></br>
