@@ -124,8 +124,13 @@ input:focus::-webkit-input-placeholder {
 }
 
 img {
-  size: 100%
+  size: 100%;
+  max-width: 100%;
+  max-height: 720px;
+  min-height: 720px;
+  min-width: 100%;
 }
+
 #dog {
   display: block;
   margin-left: 5px;
