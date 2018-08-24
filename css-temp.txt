@@ -1,0 +1,25 @@
+/* ---------- Sandbox colours for ease of checking ---------- *
+/* Small phones = <400px */
+body {  background-color: #D1EBFF;}
+/* Big phones = 400-550px = red */
+@media (min-width: 400px) { body {background-color: red;} }
+/* Phablet = 550-750px = orange */
+@media (min-width: 550px) { body {background-color: orange;} }
+/* Tablet = 750-1000px = yellow */
+@media (min-width: 750px) { body {background-color: yellow;} }
+/* Desktop = 1000-1200px = green */
+@media (min-width: 1000px) { body {background-color: green;} }
+/* HD Desktop = >1200px = blue */
+@media (min-width: 1200px) { body {background-color: blue;} 
+
+
+/* Phablet = 550-750px = orange */
+@media (min-width: 550px) {}
+/* Tablet = 750-1000px = yellow */
+@media (min-width: 750px) {}
+/* Desktop = 1000-1200px = green */
+@media (min-width: 1000px) {}
+/* HD Desktop = >1200px = blue */
+@media (min-width: 1200px) {}
+
+/* END SANDBOX */
