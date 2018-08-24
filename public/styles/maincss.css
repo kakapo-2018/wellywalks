@@ -122,3 +122,14 @@ input:focus::-webkit-input-placeholder {
   color: green;
   font-weight: bold;
 }
+
+#dog {
+  display: block;
+  margin-left: 5px;
+  margin-top: 10px;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
