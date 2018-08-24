@@ -1,15 +1,34 @@
 <h3>Add Walk</h3>
 
-<form action="/add" method="POST">
+<form role="form"action="/add" method="POST">
+<div class="form-group">
     <input placeholder="Walk name"type="text" name="walk_name"  />
+    </div>
+    <div class="form-group">
     <input placeholder="Created By"type="text" name="created_by"  />
+    </div>
+    <div class="form-group">
     <input placeholder="Location"type="text" name="location"  />
+    </div>
+    <div class="form-group">
     <input placeholder="Length" type="number" name="length" />
+    </div>
+    <div class="form-group">
     <input placeholder="Duration" type="number" name="duration"  />
+    </div>
+    <div class="form-group">
     <input placeholder="Difficulty"type="text" name="difficulty"  />
+    </div>
+    <div class="form-group">
     <input placeholder="Description"type="text" name="description" />
-    <input placeholder="URL"type="url" name="url" />
-    <h2>Dog Friendly?<input id="dog" placeholder="Dog Friendly?" type="checkbox" name="dog_friendly" /></h2>
+    </div>
+    <div class="form-group">
+    <input placeholder="URL" type="url" name="url" />
+    </div>
+    <div class="form-group">
+    <input placeholder="Image URL" type="url" name="image" />
+    </div>
+    <h3>Dog Friendly?<input id="dog" placeholder="Dog Friendly?" type="checkbox" name="dog_friendly" /></h3>
     
     <p></p>
     <input id="submit" type="submit" value="Add Walk">
