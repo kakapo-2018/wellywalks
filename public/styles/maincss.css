@@ -102,7 +102,7 @@ input:focus::-webkit-input-placeholder {
   font-weight: bold;
 }
 
-img {
+.picc {
   size: 100%;
   max-width: 100%;
   max-height: 720px;
@@ -122,12 +122,15 @@ img {
 }
 
 .footer {
+  font-size: 1.3em;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: grey;
+  color: white;
   text-align: center;
+  background-color: rgba(0,0,0,0.5)
+
 }
 
 .mainstyle {
