@@ -1,22 +1,9 @@
-/* ---------- Sandbox colours for ease of checking ---------- *
-/* Small phones = <400px */
-body {  background-color: green;}
-/* Big phones = 400-550px = red */
-@media (min-width: 400px) { body {background-color: red;} }
-/* Phablet = 550-750px = orange */
-@media (min-width: 550px) { body {background-color: orange;} }
-/* Tablet = 750-1000px = yellow */
-@media (min-width: 750px) { body {background-color: yellow;} }
-/* Desktop = 1000-1200px = green */
-@media (min-width: 1000px) { body {background-color: lightgreen;} }
-/* HD Desktop = >1200px = blue */
-@media (min-width: 1200px) { body {background-color: lightblue;} }
 
 /* -------------------- Body ----- */
 
 
 body {
-  background-color: #98e698;
+  background-color: #bcd5ff;
 }
 
 
@@ -48,10 +35,6 @@ nav a {
 
 /* -------------------- Headings ----- */
 
-
-h1 {
-
-}
 
 h2 {
   font-style: italic;
@@ -90,11 +73,7 @@ iframe {
   }
 }
 
-/* Tablet = 750-1000px = yellow */
-@media (min-width: 750px) {}
-/* Desktop = 1000-1200px = green */
-@media (min-width: 1000px) {}
-/* HD Desktop = >1200px = blue */
+
 @media (min-width: 1200px) {
   iframe {
     width: 600px;
@@ -148,5 +127,5 @@ img {
 }
 
 .mainstyle {
-  background-color: darkgray;
+  background-color: rgb(72, 112, 177);
 }
