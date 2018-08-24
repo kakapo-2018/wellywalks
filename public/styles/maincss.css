@@ -126,3 +126,13 @@ input:focus::-webkit-input-placeholder {
 img {
   size: 100%
 }
+#dog {
+  display: block;
+  margin-left: 5px;
+  margin-top: 10px;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}

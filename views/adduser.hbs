@@ -1,14 +1,14 @@
 <h3>Add User</h3>
 <form action="/adduser" method="POST">
-    <input type="text" name="name" value="name" />
-    <input type="text" name="level" value="level" />
-    <input type="text" name="bio" value="bio" />
-    <input type="url" name="image" value="image" />
+    <input type="text" name="name" placeholder="name" />
+    <input type="text" name="level" placeholder="level" />
+    <input type="text" name="bio" placeholder="bio" />
+    <input type="url" name="image" placeholder="image" />
     <input id="submit" type="submit" value="Sign up" />
 </form>
 
 {{#if success}}
-    <p>Added user!</p>
+    <h2 id="success">Added user {{name}}  <i class="fas fa-check"></i></h2>
 {{/if }}
 
 <a href="/">Home</a></br>
