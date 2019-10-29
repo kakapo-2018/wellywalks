@@ -21,7 +21,7 @@
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "heroku": "^7.12.1",
-    "knex": "^0.15.2",
+    "knex": "^0.19.5",
     "pg": "^7.4.3"
   },
   "devDependencies": {
